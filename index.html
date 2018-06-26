@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+#gText{ position:absolute;left:0;top:156px;width:100%;height:284px; -webkit-perspective:1500px;
+-moz-perspective:1500px;
+-ms-perspective:1500px;
+perspective:1500px;
+}
+#gText div{ -webkit-transform-style:preserve-3d;
+-moz-transform-style:preserve-3d;
+-ms-transform-style:preserve-3d;
+transform-style:preserve-3d;
+ position:absolute;top:0; transition:1s; -webkit-transform-origin:left;-moz-transform-origin:left;-ms-transform-origin:left;transform-origin:left;}
+#gTextC{ left:0;}
+#gTextC div{ left:309px;}
+#gTextC article{width:270px;padding:0 19px; height:284px;background:url(../img/fTextC.png) no-repeat;border-right:1px dotted #c4c4c4; transition:1s; cursor:pointer; box-shadow:0 10px 10px -10px rgba(0,0,0,0.8); background: rgba(73,73,73,0.8);}
+
+</style>
+</head>
+
+<body>
+<div id="gText" style="left: 500px; top: 356px;">
+            	<div id="gTextC" style="transform: translateX(-34px) translateZ(0px) rotateY(75deg);">
+                    <article>
+                        <img src="img/1.jpg" alt="">
+                    </article>
+                    <div style="transform: rotateY(-150deg);">
+                    <article>
+                       <img src="img/2.jpg" alt="">
+                    </article>
+                    <div style="transform: rotateY(150deg);">
+                    <article>
+                        <img src="img/3.jpg" alt="">
+                    </article>
+                    <div style="transform: rotateY(-150deg);">
+                    <article class="">
+                       <img src="img/4.jpg" alt="">
+                    </article>
+                    <div style="transform: rotateY(150deg);">
+                    <article class="">
+                       <img src="img/5.jpg" alt="">
+                    </article>
+                    <div style="transform: rotateY(-150deg);">
+                    <article class="">
+                       <img src="img/6.jpg" alt="">
+                    </article>
+                    <div style="transform: rotateY(75deg);">
+                        <article class="active">
+                        	<img src="img/7.jpg" alt="">
+                   		</article>
+                    </div>
+                    </div>
+                    </div>	
+                    </div>
+                    </div>	
+                    </div>
+               </div>
+            </div>
+            <script>
+				var gTextC=document.getElementById('gTextC');
+				var adiv=gTextC.getElementsByTagName('div');
+				var article=gTextC.getElementsByTagName('article');
+				article[0].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(0deg) translateX(210px)';
+					adiv[0].style.transform='rotateY(115deg)';
+					adiv[1].style.transform='rotateY(-150deg)';
+					adiv[2].style.transform='rotateY(150deg)';
+					adiv[3].style.transform='rotateY(-150deg)';
+					adiv[4].style.transform='rotateY(150deg)';
+					adiv[5].style.transform='rotateY(-150deg)';
+				}
+				article[1].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(75deg) translateX(180px)';
+					adiv[0].style.transform='rotateY(-75deg)';
+					adiv[1].style.transform='rotateY(-75deg)';
+					adiv[2].style.transform='rotateY(150deg)';
+					adiv[3].style.transform='rotateY(-150deg)';
+					adiv[4].style.transform='rotateY(150deg)';
+					adiv[5].style.transform='rotateY(-150deg)';
+				}
+				article[2].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(75deg)  translateX(150px)';
+					adiv[0].style.transform='rotateY(-150deg)';
+					adiv[1].style.transform='rotateY(75deg)';
+					adiv[2].style.transform='rotateY(75deg)';
+					adiv[3].style.transform='rotateY(-150deg)';
+					adiv[4].style.transform='rotateY(150deg)';
+					adiv[5].style.transform='rotateY(-150deg)';
+				}
+				article[3].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(75deg) translateX(120px)';
+					adiv[0].style.transform='rotateY(-150deg)';
+					adiv[1].style.transform='rotateY(150deg)';
+					adiv[2].style.transform='rotateY(-75deg)';
+					adiv[3].style.transform='rotateY(-75deg)';
+					adiv[4].style.transform='rotateY(150deg)';
+					adiv[5].style.transform='rotateY(-150deg)';
+				}
+				article[4].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(75deg) translateX(90px)';
+					adiv[0].style.transform='rotateY(-150deg)';
+					adiv[1].style.transform='rotateY(150deg)';
+					adiv[2].style.transform='rotateY(-150deg)';
+					adiv[3].style.transform='rotateY(75deg)';
+					adiv[4].style.transform='rotateY(75deg)';
+					adiv[5].style.transform='rotateY(-150deg)';
+				}
+				article[5].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(75deg) translateX(60px)';
+					adiv[0].style.transform='rotateY(-150deg)';
+					adiv[1].style.transform='rotateY(150deg)';
+					adiv[2].style.transform='rotateY(-150deg)';
+					adiv[3].style.transform='rotateY(150deg)';
+					adiv[4].style.transform='rotateY(-75deg)';
+					adiv[5].style.transform='rotateY(-75deg)';
+				}
+				article[6].onmouseover=function(){
+					
+					gTextC.style.transform='rotateY(75deg) translateX(30px)';
+					adiv[0].style.transform='rotateY(-150deg)';
+					adiv[1].style.transform='rotateY(150deg)';
+					adiv[2].style.transform='rotateY(-150deg)';
+					adiv[3].style.transform='rotateY(150deg)';
+					adiv[4].style.transform='rotateY(-150deg)';
+					adiv[5].style.transform='rotateY(75deg)';
+				}
+			</script>
+</body>
+</html>
